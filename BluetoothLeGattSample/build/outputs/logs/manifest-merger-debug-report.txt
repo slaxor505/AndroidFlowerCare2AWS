@@ -1,0 +1,102 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:20:1-57:12
+INJECTED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:20:1-57:12
+INJECTED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:20:1-57:12
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.6.0] /Users/slavapisarevskiy/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.6.0.aar/dc350def6f6b251bd330f6de0d4bd824/AndroidManifest.xml:2:1-18:12
+INJECTED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:20:1-57:12
+INJECTED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:20:1-57:12
+	package
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:21:5-50
+	android:versionName
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:23:5-30
+		INJECTED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml
+		INJECTED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:20:11-69
+	android:versionCode
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:22:5-28
+		INJECTED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml
+		INJECTED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml
+uses-sdk
+ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:25:5-26:40
+INJECTED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:25:5-26:40
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.6.0] /Users/slavapisarevskiy/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.6.0.aar/dc350def6f6b251bd330f6de0d4bd824/AndroidManifest.xml:7:5-9:41
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.6.0] /Users/slavapisarevskiy/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.6.0.aar/dc350def6f6b251bd330f6de0d4bd824/AndroidManifest.xml:7:5-9:41
+INJECTED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:25:5-26:40
+	android:targetSdkVersion
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:26:9-38
+		INJECTED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml
+		INJECTED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:25:15-41
+uses-feature#android.hardware.bluetooth_le
+ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:32:5-89
+	android:required
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:32:64-87
+	android:name
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:32:19-63
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:34:5-67
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.6.0] /Users/slavapisarevskiy/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.6.0.aar/dc350def6f6b251bd330f6de0d4bd824/AndroidManifest.xml:11:5-68
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.6.0] /Users/slavapisarevskiy/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.6.0.aar/dc350def6f6b251bd330f6de0d4bd824/AndroidManifest.xml:11:5-68
+	android:name
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:34:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:35:5-73
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.6.0] /Users/slavapisarevskiy/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.6.0.aar/dc350def6f6b251bd330f6de0d4bd824/AndroidManifest.xml:12:5-74
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.6.0] /Users/slavapisarevskiy/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.6.0.aar/dc350def6f6b251bd330f6de0d4bd824/AndroidManifest.xml:12:5-74
+	android:name
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:35:22-71
+uses-permission#android.permission.INTERNET
+ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:36:5-66
+	android:name
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:36:22-64
+application
+ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:38:5-55:19
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.6.0] /Users/slavapisarevskiy/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.6.0.aar/dc350def6f6b251bd330f6de0d4bd824/AndroidManifest.xml:16:5-53
+MERGED from [com.polidea.rxandroidble2:rxandroidble:1.6.0] /Users/slavapisarevskiy/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.6.0.aar/dc350def6f6b251bd330f6de0d4bd824/AndroidManifest.xml:16:5-53
+	android:label
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:38:18-50
+	android:icon
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:39:9-45
+	android:theme
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:40:9-56
+activity#com.example.android.bluetoothlegatt.DeviceScanActivity
+ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:41:9-47:20
+	android:label
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:42:13-45
+	android:name
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:41:19-53
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:43:13-46:29
+action#android.intent.action.MAIN
+ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:44:17-68
+	android:name
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:44:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:45:17-76
+	android:name
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:45:27-74
+activity#com.example.android.bluetoothlegatt.DeviceControlActivity
+ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:48:9-58
+	android:name
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:48:19-56
+service#com.example.android.bluetoothlegatt.BluetoothLeService
+ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:49:9-77
+	android:enabled
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:49:53-75
+	android:name
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:49:18-52
+service#com.example.android.bluetoothlegatt.BluetoothLeJobService
+ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:51:9-53:71
+	android:enabled
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:52:13-35
+	android:permission
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:53:13-69
+	android:name
+		ADDED from /Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/AndroidManifest.xml:51:18-55
+uses-permission-sdk-23#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [com.polidea.rxandroidble2:rxandroidble:1.6.0] /Users/slavapisarevskiy/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.6.0.aar/dc350def6f6b251bd330f6de0d4bd824/AndroidManifest.xml:14:5-88
+	android:name
+		ADDED from [com.polidea.rxandroidble2:rxandroidble:1.6.0] /Users/slavapisarevskiy/.gradle/caches/transforms-1/files-1.1/rxandroidble-1.6.0.aar/dc350def6f6b251bd330f6de0d4bd824/AndroidManifest.xml:14:29-85
