@@ -1,4 +1,4 @@
-#Sat Sep 14 14:10:07 AEST 2019
+#Sun Sep 15 14:51:44 AEST 2019
 base.0=/Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

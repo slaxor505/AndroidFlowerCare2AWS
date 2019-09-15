@@ -65,6 +65,8 @@ public class BluetoothLeJobService extends JobService
     private BluetoothGatt mBluetoothGatt;
 
     private int mConnectionState = STATE_DISCONNECTED;
+    private int mCurrentDeviceIndex = 0;
+    private String[] mDeviceArray;
 
     private static final int STATE_DISCONNECTED = 0;
 
@@ -214,9 +216,23 @@ public class BluetoothLeJobService extends JobService
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                Log.i(TAG, "jobRun: Job finished.");
-                jobFinished(jobParam, false);
 
+                mCurrentDeviceIndex++;
+                if (mCurrentDeviceIndex <= (mDeviceArray.length-1))
+                {
+                    Boolean connStatus = connect(mDeviceArray[mCurrentDeviceIndex]);
+
+                    Log.i(TAG, "run: Connection initiated. Status: "+connStatus+" mCurrentDeviceIndex: "+mCurrentDeviceIndex);
+
+                    if (!connStatus) {
+                        Log.i(TAG, "jobRun: BLE connection init failed at mCurrentDeviceIndex: "+mCurrentDeviceIndex+". Rescheduling job");
+                        jobFinished(jobParam, false);
+                    }
+                }
+                else {
+                    Log.i(TAG, "jobRun: Job finished.");
+                    jobFinished(jobParam, false);
+                }
             }
         }
 
@@ -229,14 +245,11 @@ public class BluetoothLeJobService extends JobService
                 AWSpublisher.connect(mSensorData.jsonData);
                 //AWSpublisher.publish();
                 AWSpublisher.disconnect();
-
             }
 
             else {
                 Log.i(TAG, "Sensor data is invalid. Not publishing.");
             }
-
-
         }
 
 
@@ -303,6 +316,7 @@ public class BluetoothLeJobService extends JobService
 
     };
 
+
     private void broadcastUpdate(final String action)
     {
         final Intent intent = new Intent(action);
@@ -361,14 +375,17 @@ public class BluetoothLeJobService extends JobService
 
                     mConnectionState=STATE_CONNECTING;
 
-                    Boolean status = connect(bundle.getString(DEV_ADDR));
-                    Log.i(TAG, "run: Connection initiated. Status: "+status);
+                    mDeviceArray = bundle.getStringArray(DeviceControlActivity.EXTRAS_DEVICE_ADDRESS_LIST);
 
-//                LocalBroadcastManager.getInstance(getApplicationContext())
+                    Boolean status = connect(mDeviceArray[mCurrentDeviceIndex]);
+
+                    Log.i(TAG, "run: Connection initiated. Status: "+status+" Index: "+mCurrentDeviceIndex);
+
+//                  LocalBroadcastManager.getInstance(getApplicationContext())
 //                        .sendBroadcast(new Intent("ServiceMessage"));
                     if (!status) {
                         Log.i(TAG, "jobRun: BLE connection init failed. Rescheduling job");
-                        jobFinished(jobParam, false);
+                        jobFinished(jobParam, true);
                     }
 
                 }
@@ -474,6 +491,7 @@ public class BluetoothLeJobService extends JobService
             }
             else
             {
+                Log.w(TAG, "Bluetooth Gatt connection failed.");
                 return false;
             }
         }

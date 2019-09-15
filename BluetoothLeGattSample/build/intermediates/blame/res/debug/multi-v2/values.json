@@ -6,47 +6,42 @@
                 {
                     "source": "/Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/res/values/strings.xml",
                     "from": {
-                        "startLines": "16,21,22,24,17,18,19,31,36,32,35,33,34,20,23,27,26,28",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "686,954,1002,1114,753,798,863,1415,1654,1464,1605,1519,1562,910,1056,1256,1198,1330",
-                        "endColumns": "66,47,53,82,44,64,46,48,49,54,48,42,42,43,57,73,57,59",
-                        "endOffsets": "748,997,1051,1192,793,858,905,1459,1699,1514,1649,1557,1600,949,1109,1325,1251,1385"
+                        "startLines": "-1,-1,22,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,4,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,1002,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "endColumns": "-1,-1,49,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "endOffsets": "-1,-1,1047,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
-                        "startLines": "10,11,12,13,23,24,25,26,27,28,29,30,31,32,33,34,35,36",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "458,525,573,627,875,920,985,1032,1081,1131,1186,1235,1278,1321,1365,1423,1497,1555",
-                        "endColumns": "66,47,53,82,44,64,46,48,49,54,48,42,42,43,57,73,57,59",
-                        "endOffsets": "520,568,622,705,915,980,1027,1076,1126,1181,1230,1273,1316,1360,1418,1492,1550,1610"
+                        "startLines": "10,11,12,13,14,24,25,26,27,28,29,30,31,32,33,34,35,36,37",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "458,525,573,623,677,925,970,1035,1082,1131,1181,1236,1285,1328,1371,1415,1473,1547,1605",
+                        "endColumns": "66,47,49,53,82,44,64,46,48,49,54,48,42,42,43,57,73,57,59",
+                        "endOffsets": "520,568,618,672,755,965,1030,1077,1126,1176,1231,1280,1323,1366,1410,1468,1542,1600,1660"
                     }
                 },
                 {
                     "source": "/Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/res/values/base-strings.xml",
                     "from": {
-                        "startLines": "20,21",
-                        "startColumns": "4,4",
-                        "startOffsets": "649,697",
-                        "endLines": "20,29",
-                        "endColumns": "47,13",
-                        "endOffsets": "692,857"
+                        "startLines": "-1,-1",
+                        "startColumns": "-1,-1",
+                        "startOffsets": "-1,-1"
                     },
                     "to": {
-                        "startLines": "9,14",
+                        "startLines": "9,15",
                         "startColumns": "4,4",
-                        "startOffsets": "410,710",
-                        "endLines": "9,22",
+                        "startOffsets": "410,760",
+                        "endLines": "9,23",
                         "endColumns": "47,13",
-                        "endOffsets": "453,870"
+                        "endOffsets": "453,920"
                     }
                 },
                 {
                     "source": "/Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/res/values/template-dimens.xml",
                     "from": {
-                        "startLines": "28,24,23,22,21,20,29",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "959,880,836,791,748,706,1029",
-                        "endColumns": "69,42,43,44,42,41,67",
-                        "endOffsets": "1024,918,875,831,786,743,1092"
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
                         "startLines": "2,3,4,5,6,7,8",
@@ -59,20 +54,17 @@
                 {
                     "source": "/Users/Shared/Dropbox/plantbook/AndroidFlowerCare/BluetoothLeGattSample/src/main/res/values/template-styles.xml",
                     "from": {
-                        "startLines": "24,20,22,27,29,34",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "768,651,713,849,878,1075",
-                        "endLines": "24,20,22,27,32,39",
-                        "endColumns": "51,60,53,27,12,12",
-                        "endOffsets": "815,707,762,872,1069,1348"
+                        "startLines": "-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
-                        "startLines": "37,38,39,40,41,45",
+                        "startLines": "38,39,40,41,42,46",
                         "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "1615,1666,1726,1779,1806,2002",
-                        "endLines": "37,38,39,40,44,50",
+                        "startOffsets": "1665,1716,1776,1829,1856,2052",
+                        "endLines": "38,39,40,41,45,51",
                         "endColumns": "50,59,52,26,12,12",
-                        "endOffsets": "1661,1721,1774,1801,1997,2275"
+                        "endOffsets": "1711,1771,1824,1851,2047,2325"
                     }
                 }
             ]

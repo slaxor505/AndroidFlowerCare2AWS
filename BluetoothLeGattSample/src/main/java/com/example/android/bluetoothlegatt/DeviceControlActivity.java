@@ -59,6 +59,8 @@ public class DeviceControlActivity extends Activity
     public static final String EXTRAS_DEVICE_NAME = "DEVICE_NAME";
 
     public static final String EXTRAS_DEVICE_ADDRESS = "DEVICE_ADDRESS";
+    public static final String EXTRAS_DEVICE_ADDRESS_LIST = "DEVICE_ADDRESS_LIST";
+
     private static final String DEV_ADDR = "DEV_ADDR" ;
     private static final int JOB_ID = 1001;
 
@@ -69,6 +71,8 @@ public class DeviceControlActivity extends Activity
     private String mDeviceName;
 
     private String mDeviceAddress;
+
+    private String[] mDeviceAddrList;
 
     private ExpandableListView mGattServicesList;
 
@@ -289,8 +293,9 @@ public class DeviceControlActivity extends Activity
         setContentView(R.layout.gatt_services_characteristics);
 
         final Intent intent = getIntent();
-        mDeviceName = intent.getStringExtra(EXTRAS_DEVICE_NAME);
-        mDeviceAddress = intent.getStringExtra(EXTRAS_DEVICE_ADDRESS);
+        mDeviceName = "Multiple"; //intent.getStringExtra(EXTRAS_DEVICE_NAME);
+        mDeviceAddress = "Multiple addresses"; //intent.getStringExtra(EXTRAS_DEVICE_ADDRESS);
+        mDeviceAddrList = intent.getStringArrayExtra(EXTRAS_DEVICE_ADDRESS_LIST);
 
         // Sets up UI references.
         ((TextView) findViewById(R.id.device_address)).setText(mDeviceAddress);
@@ -390,10 +395,14 @@ public class DeviceControlActivity extends Activity
 
         Log.i(TAG, "Starting polling service.");
 
+        updateConnectionState(R.string.connecting);
+
         JobScheduler jobScheduler = (JobScheduler) getSystemService(
                 Context.JOB_SCHEDULER_SERVICE);
         PersistableBundle bundle = new PersistableBundle();
-        bundle.putString(DEV_ADDR, mDeviceAddress);
+
+        //bundle.putString(DEV_ADDR, mDeviceAddress);
+        bundle.putStringArray(EXTRAS_DEVICE_ADDRESS_LIST, mDeviceAddrList);
         JobInfo jobInfo = new JobInfo.Builder(JOB_ID,
                 new ComponentName(this, BluetoothLeJobService.class))
                 .setPeriodic(POLL_INTERVAL*1000)

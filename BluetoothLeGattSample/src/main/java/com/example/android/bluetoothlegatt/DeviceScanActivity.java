@@ -133,28 +133,29 @@ public class DeviceScanActivity extends Activity
     private boolean connectToMyDevice()
     {
         Log.i(TAG, "Connect to "+myDeviceName);
-        int position = -1;
-        for(int i=0; i < mLeDeviceListAdapter.getCount(); i++)
-        {
-            BluetoothDevice d = mLeDeviceListAdapter.getDevice(i);
-            Log.i(TAG,"device name is: '" + d.getName() + "'");
 
-            if (d.getName() != null &&
-                    d.getName().compareTo(myDeviceName) == 0)
-            {
-                Log.i(TAG, "Got device");
-                position = i;
-                break;
-            }
-        }
-        if (position != -1)
+        //only flowerCare devices in the list
+        if (mLeDeviceListAdapter.getCount()>0)
         {
-            final BluetoothDevice device = mLeDeviceListAdapter.getDevice(position);
-            if (device == null)
-                return (false);
+            final String[] devList = new String[mLeDeviceListAdapter.getCount()];
+
             final Intent intent = new Intent(this, DeviceControlActivity.class);
-            intent.putExtra(DeviceControlActivity.EXTRAS_DEVICE_NAME, device.getName());
-            intent.putExtra(DeviceControlActivity.EXTRAS_DEVICE_ADDRESS, device.getAddress());
+
+            for(int i=0; i < mLeDeviceListAdapter.getCount(); i++)
+            {
+
+                BluetoothDevice d = mLeDeviceListAdapter.getDevice(i);
+
+                Log.i(TAG,"Adding device addr is: '" + d.getAddress() + "'");
+                //Log.i(TAG, "Adding device "+i);
+
+                devList[i]=d.getAddress();
+                    //break;
+            }
+
+            intent.putExtra(DeviceControlActivity.EXTRAS_DEVICE_ADDRESS_LIST, devList);
+            //intent.putExtra(DeviceControlActivity.EXTRAS_DEVICE_NAME, device.getName());
+            //intent.putExtra(DeviceControlActivity.EXTRAS_DEVICE_ADDRESS, device.getAddress());
             if (mScanning)
             {
                 mBluetoothAdapter.stopLeScan(mLeScanCallback);
@@ -162,8 +163,10 @@ public class DeviceScanActivity extends Activity
             }
             startActivity(intent);
         }
-        else
-            Log.i(TAG, "Unable to find device");
+        else {
+            Log.i(TAG, "Unable to find FlowerCare devices");
+            return false;
+        }
 
         return true;
     }
