@@ -211,12 +211,6 @@ public class BluetoothLeJobService extends JobService
 
                 broadcastUpdate(READ_PUBLISH_COMPLETE, characteristic);
 
-                try {
-                    Thread.sleep(10000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-
                 mCurrentDeviceIndex++;
                 if (mCurrentDeviceIndex <= (mDeviceArray.length-1))
                 {
@@ -230,6 +224,14 @@ public class BluetoothLeJobService extends JobService
                     }
                 }
                 else {
+
+                    //to wait Bluegatt to complete disconnection I suppose and avoid unhandled callback.
+                    Log.d(TAG, "Waiting 10 sec for BlueGatt to settle");
+                    try {
+                        Thread.sleep(10000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                     Log.i(TAG, "jobRun: Job finished.");
                     jobFinished(jobParam, false);
                 }
