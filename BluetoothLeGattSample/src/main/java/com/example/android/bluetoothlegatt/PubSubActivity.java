@@ -50,23 +50,25 @@ public class PubSubActivity {
 
     // IoT endpoint
     // AWS Iot CLI describe-endpoint call returns: XXXXXXXXXX.iot.<region>.amazonaws.com
-    private static final String CUSTOMER_SPECIFIC_ENDPOINT = "a1y6gzh5swnwzv.iot.us-east-2.amazonaws.com";
+    private static final String CUSTOMER_SPECIFIC_ENDPOINT = "INSERT-YOURS";
     // Cognito pool ID. For this app, pool needs to be unauthenticated pool with
     // AWS IoT permissions.
-    private static final String COGNITO_POOL_ID = "us-east-2:187f25fb-ea0f-49a5-af50-8517a832531b";
+    private static final String COGNITO_POOL_ID = "INSERT-YOURS";
     // Name of the AWS IoT policy to attach to a newly created certificate
-    private static final String AWS_IOT_POLICY_NAME = "AndroidIOTPolicy1";
+    private static final String AWS_IOT_POLICY_NAME = "INSERT-YOURS";
 
     // Region of AWS IoT
+    // INSERT-YOURS below is example
     private static final Regions MY_REGION = Regions.US_EAST_2;
     // Filename of KeyStore file on the filesystem
+    // INSERT-YOURS below is example
     private static final String KEYSTORE_NAME = "iot_keystore";
     // Password for the private key in the KeyStore
-    private static final String KEYSTORE_PASSWORD = "pass4AWS";
+    private static final String KEYSTORE_PASSWORD = "INSERT-YOURS";
     // Certificate and key aliases in the KeyStore
     private static final String CERTIFICATE_ID = "default";
-
-    private static final String AWSIOT_TOPIC = "iotbutton/MySerialNumber1";
+    // INSERT-YOURS below is example
+    private static final String AWSIOT_TOPIC = "iotbutton/MyTopic1";
 
 //    EditText txtSubcribe;
 //    EditText txtTopic;
