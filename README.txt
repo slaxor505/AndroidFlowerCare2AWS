@@ -1,7 +1,7 @@
 About the app
 --------------
 
-This App reads data from Xiaomi FlowerCare Bluetooth LE sensor periodically at background and upload to reading over MQTT to AWS IOT service
+This App reads data from Xiaomi Mi-Flora Bluetooth LE sensor periodically at background and send readings over MQTT to AWS IOT service
 
 Build Instructions
 -------------------
